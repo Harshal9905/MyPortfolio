@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv Pawar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Atharv Pawar</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h2>Full Stack Developer</h2>
+            <p>Java & Python Enthusiast</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a recent graduate with a passion for Full Stack Development, specializing in Java and Python. I’m eager to leverage my academic background to contribute to dynamic projects and collaborate with talented teams. My goal is to apply my skills to create innovative solutions and impactful software, driving progress and excellence in the tech industry.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <h3>Java</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Python Programming</h3>
+            </div>
+            <div class="skill-item">
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill-item">
+                <h3>HTML, CSS, JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <h3>GitHub</h3>
+            </div>
+            <div class="skill-item">
+                <h3>Vercel</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-item" onclick="showProjectPopup('chatbot')">
+                <h3>Collage Chatbot</h3>
+                <p>Led the development of a Python chatbot project, aiming to enhance user experience for students.</p>
+            </div>
+            <div class="project-item" onclick="showProjectPopup('lms')">
+                <h3>Library Management System</h3>
+                <p>This LMS efficiently manages books, borrowers, and loans, enhancing library operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="certifications-container">
+            <div class="certification-item" onclick="showCertPopup('cert1')">
+                <h3>InfyTQ Python Training & Internship</h3>
+                <p>Completed Python training and internship on InfyTQ platform at KBP College from March 24th to May 14th, 2023.</p>
+            </div>
+            <div class="certification-item" onclick="showCertPopup('cert2')">
+                <h3>Full Stack Java Course at Symbiosis</h3>
+                <p>Currently enrolled in a Full Stack Java course at Symbiosis, gaining comprehensive skills in Java programming for both front-end and back-end development.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Modal for Projects -->
+    <div id="popup-project" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeProjectPopup()">&times;</span>
+            <div id="popup-project-detail"></div>
+        </div>
+    </div>
+
+    <!-- Popup Modal for Certifications -->
+    <div id="popup-cert" class="popupcert">
+        <div class="popupcert-content">
+            <span class="close-btn-popupcert" onclick="closeCertPopup()">&times;</span>
+            <img id="popup-cert-image" src="Image/SYMBFullStackJava_page-0001.jpg" alt="Certificate">
+        </div>
+    </div>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Phone: +91 8767906745</p>
+        <p>Email: <a href="mailto:pawaratharv478@gmail.com">pawaratharv478@gmail.com</a></p>
+        <p>Address: Welcome Park Apt, Kherdi, Chiplun, Ratnagiri</p>
+        <p><a href="https://github.com/Harshal9905" target="_blank">GitHub: Harshal9905 (Atharv Pawar)</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Atharv Pawar. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
