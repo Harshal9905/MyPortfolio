@@ -32,6 +32,21 @@ function showProjectPopup(project) {
                 <li>Backend Support: Built with Spring Boot for robust backend functionality.</li>
             </ul>
         `;
+    }else if (project === 'ccm') {
+        projectDetails = `
+            <h2>Company-Course Management Dashboard</h2>
+            <p>This dashboard allows efficient management of companies and their associated courses with a many-to-many relationship, featuring dynamic tables and CRUD operations.</p>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Company Management: Add, update, delete, and search companies by name, industry, or location.</li>
+                <li>Course Management: Manage courses, including adding, updating, and associating courses with multiple companies.</li>
+                <li>Many-to-Many Relationship Handling: Easily assign multiple courses to companies and vice versa.</li>
+                <li>Dynamic Table Views: Display company and course data with real-time updates and filtering options.</li>
+                <li>Detailed Information Popups: View detailed information about specific companies and their associated courses in modals or popups.</li>
+                <li>User Interface: Built with a user-friendly interface using Thymeleaf, making data management intuitive.</li>
+                <li>Backend Support: Powered by Spring Boot and JPA for efficient data handling and robust backend performance.</li>
+            </ul>
+        `;
     }
 
     popupDetail.innerHTML = projectDetails;
